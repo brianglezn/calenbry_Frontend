@@ -1,5 +1,138 @@
 @import '../../../variables';
 
 .home {
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+
+    .home-title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: .9rem;
+        color: $primary_color-600;
+        margin: 0;
+    }
+
+    .home-heading {
+        text-align: center;
+        font-size: 3rem;
+        margin: 1rem 0;
+
+        span {
+            color: $primary_color;
+        }
+    }
+
+    .home__main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        max-width: 1200px;
+        padding: 2rem;
+        margin-top: 2rem;
+
+        .home__main-description {
+            font-size: 1.2rem;
+        }
+
+        .home__main-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+
+            button {
+                width: 6rem;
+            }
+        }
+    }
+
+    .home__how {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        padding: 3rem 2rem;
+        margin-top: 4rem;
+        background-color: $bg-color-sec;
+        border-radius: 2rem;
+
+        .home__how-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem;
+
+            .home__how-content__step {
+                max-width: 80%;
+                display: flex;
+                align-items: center;
+
+                div {
+                    span {
+                        text-transform: uppercase;
+                        color: $primary_color-600;
+                    }
+
+                    h4 {
+                        font-size: 2rem;
+                        margin: .5rem 0 1.5rem;
+                    }
+
+                    img {
+                        width: 17rem;
+                        height: 17rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .home-heading {
+            font-size: 2rem;
+        }
+
+        .home__how {
+            .home__how-content {
+                .home__how-content__step {
+                    div {
+                        h4 {
+                            font-size: 1.2rem;
+                        }
+
+                        img {
+                            width: 12rem;
+                            height: 12rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .home-heading {
+            font-size: 2rem;
+        }
+
+        .home__how {
+            .home__how-content {
+                .home__how-content__step {
+                    div {
+                        h4 {
+                            font-size: 1.2rem;
+                        }
+
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
