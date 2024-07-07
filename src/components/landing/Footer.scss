@@ -1,0 +1,71 @@
+@import '../../../variables';
+
+.footer {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background-color: $bg-color-sec;
+    display: flex;
+    justify-content: center;
+
+    .footer__container {
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            flex: 1;
+        }
+
+        .footer__logo img {
+            height: 5rem;
+        }
+
+        .footer__socials {
+            display: flex;
+            flex-direction: column;
+            text-align: end;
+
+            h4 {
+                margin: 1rem 0 .5rem;
+                color: $primary_color;
+            }
+
+            p {
+                margin-top: 0;
+                color: $text_color-black
+            }
+
+            div {
+                display: flex;
+                justify-content: end;
+                gap: 1rem;
+
+                svg {
+                    fill: $primary_color;
+                }
+            }
+
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .footer__container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .footer__logo {
+                margin-bottom: 1rem;
+            }
+
+            .footer__socials {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}

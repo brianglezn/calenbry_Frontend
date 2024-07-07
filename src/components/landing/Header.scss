@@ -32,8 +32,6 @@
             list-style: none;
             gap: 1rem;
             padding: 0;
-
-
         }
 
         .header__actions {
@@ -41,6 +39,11 @@
             display: flex;
             justify-content: end;
             gap: .5rem;
+
+            .header__actions-auth {
+                display: flex;
+                gap: .5rem;
+            }
 
             .header__menu-button {
                 display: none;

@@ -2359,34 +2359,39 @@ body {
   .p-button.p-button-outlined {
     background-color: transparent;
     color: $primary_color;
+    fill: $primary_color;
     border: 1px solid;
   }
 
   .p-button.p-button-outlined:not(:disabled):hover {
     background: rgba(255, 213, 79, 0.04);
     color: $primary_color;
+    fill: $primary_color;
     border: 1px solid;
   }
 
   .p-button.p-button-outlined:not(:disabled):active {
-    background: rgba(255, 213, 79, 0.16);
     color: $primary_color;
+    fill: $primary_color;
     border: 1px solid;
   }
 
   .p-button.p-button-outlined.p-button-plain {
     color: $text_color-grey;
+    fill: $text_color-grey;
     border-color: $text_color-grey;
   }
 
   .p-button.p-button-outlined.p-button-plain:not(:disabled):hover {
     background: rgba(255, 255, 255, 0.03);
     color: $text_color-grey;
+    fill: $text_color-grey;
   }
 
   .p-button.p-button-outlined.p-button-plain:not(:disabled):active {
     background: rgba(255, 255, 255, 0.16);
     color: $text_color-grey;
+    fill: $text_color-grey;
   }
 
   .p-button.p-button-text {
@@ -2582,6 +2587,7 @@ body {
   .p-fileupload-choose.p-button-secondary.p-button-outlined {
     background-color: transparent;
     color: #78909c;
+    fill: #78909c;
     border: 1px solid;
   }
 
@@ -2591,6 +2597,7 @@ body {
   .p-fileupload-choose.p-button-secondary.p-button-outlined:not(:disabled):hover {
     background: rgba(120, 144, 156, 0.04);
     color: #78909c;
+    fill: #78909c;
     border: 1px solid;
   }
 
@@ -2600,6 +2607,7 @@ body {
   .p-fileupload-choose.p-button-secondary.p-button-outlined:not(:disabled):active {
     background: rgba(120, 144, 156, 0.16);
     color: #78909c;
+    fill: #78909c;
     border: 1px solid;
   }
 
@@ -2609,6 +2617,7 @@ body {
   .p-fileupload-choose.p-button-secondary.p-button-text {
     background-color: transparent;
     color: #78909c;
+    fill: #78909c;
     border-color: transparent;
   }
 
@@ -2619,6 +2628,7 @@ body {
     background: rgba(120, 144, 156, 0.04);
     border-color: transparent;
     color: #78909c;
+    fill: #78909c;
   }
 
   .p-button.p-button-secondary.p-button-text:not(:disabled):active,
@@ -2628,6 +2638,7 @@ body {
     background: rgba(120, 144, 156, 0.16);
     border-color: transparent;
     color: #78909c;
+    fill: #78909c;
   }
 
   .p-button.p-button-info,
@@ -2635,6 +2646,7 @@ body {
   .p-splitbutton.p-button-info>.p-button,
   .p-fileupload-choose.p-button-info {
     color: #121212;
+    fill: #121212;
     background: $primary_color-400;
     border: 1px solid $primary_color-400;
   }
@@ -2645,6 +2657,7 @@ body {
   .p-fileupload-choose.p-button-info:not(:disabled):hover {
     background: $primary_color-400;
     color: #121212;
+    fill: #121212;
     border-color: $primary_color-400;
   }
 
@@ -2670,6 +2683,7 @@ body {
   .p-fileupload-choose.p-button-info.p-button-outlined {
     background-color: transparent;
     color: $primary_color-400;
+    fill: $primary_color-400;
     border: 1px solid;
   }
 
@@ -2679,6 +2693,7 @@ body {
   .p-fileupload-choose.p-button-info.p-button-outlined:not(:disabled):hover {
     background: rgba(129, 212, 250, 0.04);
     color: $primary_color-400;
+    fill: $primary_color-400;
     border: 1px solid;
   }
 
@@ -2688,6 +2703,7 @@ body {
   .p-fileupload-choose.p-button-info.p-button-outlined:not(:disabled):active {
     background: rgba(129, 212, 250, 0.16);
     color: $primary_color-400;
+    fill: $primary_color-400;
     border: 1px solid;
   }
 
@@ -2697,6 +2713,7 @@ body {
   .p-fileupload-choose.p-button-info.p-button-text {
     background-color: transparent;
     color: $primary_color-400;
+    fill: $primary_color-400;
     border-color: transparent;
   }
 
@@ -2707,6 +2724,7 @@ body {
     background: rgba(129, 212, 250, 0.199);
     border-color: transparent;
     color: $primary_color-400;
+    fill: $primary_color-400;
   }
 
   .p-button.p-button-info.p-button-text:not(:disabled):active,
@@ -2716,6 +2734,7 @@ body {
     background: rgba(129, 212, 250, 0.16);
     border-color: transparent;
     color: $primary_color-400;
+    fill: $primary_color-400;
   }
 
   .p-button.p-button-success,
@@ -2723,6 +2742,7 @@ body {
   .p-splitbutton.p-button-success>.p-button,
   .p-fileupload-choose.p-button-success {
     color: #121212;
+    fill: #121212;
     background: $primary_color-100;
     border: 1px solid $primary_color-100;
   }
@@ -2733,6 +2753,7 @@ body {
   .p-fileupload-choose.p-button-success:not(:disabled):hover {
     background: #b2d788;
     color: #121212;
+    fill: #121212;
     border-color: #b2d788;
   }
 
@@ -2758,6 +2779,7 @@ body {
   .p-fileupload-choose.p-button-success.p-button-outlined {
     background-color: transparent;
     color: $primary_color-100;
+    fill: $primary_color-100;
     border: 1px solid;
   }
 
@@ -2767,6 +2789,7 @@ body {
   .p-fileupload-choose.p-button-success.p-button-outlined:not(:disabled):hover {
     background: rgba(197, 225, 165, 0.04);
     color: $primary_color-100;
+    fill: $primary_color-100;
     border: 1px solid;
   }
 
@@ -2776,6 +2799,7 @@ body {
   .p-fileupload-choose.p-button-success.p-button-outlined:not(:disabled):active {
     background: rgba(197, 225, 165, 0.16);
     color: $primary_color-100;
+    fill: $primary_color-100;
     border: 1px solid;
   }
 
@@ -2785,6 +2809,7 @@ body {
   .p-fileupload-choose.p-button-success.p-button-text {
     background-color: transparent;
     color: $primary_color-100;
+    fill: $primary_color-100;
     border-color: transparent;
   }
 
@@ -2795,6 +2820,7 @@ body {
     background: rgba(197, 225, 165, 0.04);
     border-color: transparent;
     color: $primary_color-100;
+    fill: $primary_color-100;
   }
 
   .p-button.p-button-success.p-button-text:not(:disabled):active,
@@ -2804,6 +2830,7 @@ body {
     background: rgba(197, 225, 165, 0.16);
     border-color: transparent;
     color: $primary_color-100;
+    fill: $primary_color-100;
   }
 
   .p-button.p-button-warning,
@@ -2811,6 +2838,7 @@ body {
   .p-splitbutton.p-button-warning>.p-button,
   .p-fileupload-choose.p-button-warning {
     color: #121212;
+    fill: #121212;
     background: $primary_color-800;
     border: 1px solid $primary_color-800;
   }
@@ -2846,6 +2874,7 @@ body {
   .p-fileupload-choose.p-button-warning.p-button-outlined {
     background-color: transparent;
     color: $primary_color-800;
+    fill: $primary_color-800;
     border: 1px solid;
   }
 
@@ -2855,6 +2884,7 @@ body {
   .p-fileupload-choose.p-button-warning.p-button-outlined:not(:disabled):hover {
     background: rgba(255, 224, 130, 0.04);
     color: $primary_color-800;
+    fill: $primary_color-800;
     border: 1px solid;
   }
 
@@ -2864,6 +2894,7 @@ body {
   .p-fileupload-choose.p-button-warning.p-button-outlined:not(:disabled):active {
     background: $primary_color-light;
     color: $primary_color-800;
+    fill: $primary_color-800;
     border: 1px solid;
   }
 
@@ -2873,6 +2904,7 @@ body {
   .p-fileupload-choose.p-button-warning.p-button-text {
     background-color: transparent;
     color: $primary_color-800;
+    fill: $primary_color-800;
     border-color: transparent;
   }
 
@@ -2883,6 +2915,7 @@ body {
     background: rgba(255, 224, 130, 0.04);
     border-color: transparent;
     color: $primary_color-800;
+    fill: $primary_color-800;
   }
 
   .p-button.p-button-warning.p-button-text:not(:disabled):active,
@@ -2892,6 +2925,7 @@ body {
     background: rgba(255, 224, 130, 0.16);
     border-color: transparent;
     color: $primary_color-800;
+    fill: $primary_color-800;
   }
 
   .p-button.p-button-help,
@@ -2934,6 +2968,7 @@ body {
   .p-fileupload-choose.p-button-help.p-button-outlined {
     background-color: transparent;
     color: #ce93d8;
+    fill: #ce93d8;
     border: 1px solid;
   }
 
@@ -2943,6 +2978,7 @@ body {
   .p-fileupload-choose.p-button-help.p-button-outlined:not(:disabled):hover {
     background: rgba(206, 147, 216, 0.04);
     color: #ce93d8;
+    fill: #ce93d8;
     border: 1px solid;
   }
 
@@ -2952,6 +2988,7 @@ body {
   .p-fileupload-choose.p-button-help.p-button-outlined:not(:disabled):active {
     background: rgba(206, 147, 216, 0.16);
     color: #ce93d8;
+    fill: #ce93d8;
     border: 1px solid;
   }
 
@@ -2961,6 +2998,7 @@ body {
   .p-fileupload-choose.p-button-help.p-button-text {
     background-color: transparent;
     color: #ce93d8;
+    fill: #ce93d8;
     border-color: transparent;
   }
 
@@ -2971,6 +3009,7 @@ body {
     background: rgba(206, 147, 216, 0.04);
     border-color: transparent;
     color: #ce93d8;
+    fill: #ce93d8;
   }
 
   .p-button.p-button-help.p-button-text:not(:disabled):active,
@@ -2980,6 +3019,7 @@ body {
     background: rgba(206, 147, 216, 0.16);
     border-color: transparent;
     color: #ce93d8;
+    fill: #ce93d8;
   }
 
   .p-button.p-button-danger,
@@ -3022,6 +3062,7 @@ body {
   .p-fileupload-choose.p-button-danger.p-button-outlined {
     background-color: transparent;
     color: #f48fb1;
+    fill: #f48fb1;
     border: 1px solid;
   }
 
@@ -3031,6 +3072,7 @@ body {
   .p-fileupload-choose.p-button-danger.p-button-outlined:not(:disabled):hover {
     background: rgba(244, 143, 177, 0.04);
     color: #f48fb1;
+    fill: #f48fb1;
     border: 1px solid;
   }
 
@@ -3040,6 +3082,7 @@ body {
   .p-fileupload-choose.p-button-danger.p-button-outlined:not(:disabled):active {
     background: rgba(244, 143, 177, 0.16);
     color: #f48fb1;
+    fill: #f48fb1;
     border: 1px solid;
   }
 
@@ -3049,6 +3092,7 @@ body {
   .p-fileupload-choose.p-button-danger.p-button-text {
     background-color: transparent;
     color: #f48fb1;
+    fill: #f48fb1;
     border-color: transparent;
   }
 
@@ -3059,6 +3103,7 @@ body {
     background: rgba(244, 143, 177, 0.04);
     border-color: transparent;
     color: #f48fb1;
+    fill: #f48fb1;
   }
 
   .p-button.p-button-danger.p-button-text:not(:disabled):active,
@@ -3100,17 +3145,20 @@ body {
   .p-splitbutton.p-button-outlined>.p-button {
     background-color: transparent;
     color: $primary_color;
+    fill: $primary_color;
     border: 1px solid;
   }
 
   .p-splitbutton.p-button-outlined>.p-button:not(:disabled):hover {
     background: rgba(255, 213, 79, 0.04);
     color: $primary_color;
+    fill: $primary_color;
   }
 
   .p-splitbutton.p-button-outlined>.p-button:not(:disabled):active {
     background: rgba(255, 213, 79, 0.16);
     color: $primary_color;
+    fill: $primary_color;
   }
 
   .p-splitbutton.p-button-outlined.p-button-plain>.p-button {
@@ -3131,6 +3179,7 @@ body {
   .p-splitbutton.p-button-text>.p-button {
     background-color: transparent;
     color: $primary_color;
+    fill: $primary_color;
     border-color: transparent;
   }
 
@@ -3238,22 +3287,26 @@ body {
   .p-splitbutton.p-button-info.p-button-outlined>.p-button {
     background-color: transparent;
     color: $primary_color-400;
+    fill: $primary_color-400;
     border: 1px solid;
   }
 
   .p-splitbutton.p-button-info.p-button-outlined>.p-button:not(:disabled):hover {
     background: rgba(129, 212, 250, 0.04);
     color: $primary_color-400;
+    fill: $primary_color-400;
   }
 
   .p-splitbutton.p-button-info.p-button-outlined>.p-button:not(:disabled):active {
     background: rgba(129, 212, 250, 0.16);
     color: $primary_color-400;
+    fill: $primary_color-400;
   }
 
   .p-splitbutton.p-button-info.p-button-text>.p-button {
     background-color: transparent;
     color: $primary_color-400;
+    fill: $primary_color-400;
     border-color: transparent;
   }
 
@@ -3261,33 +3314,39 @@ body {
     background: rgba(129, 212, 250, 0.04);
     border-color: transparent;
     color: $primary_color-400;
+    fill: $primary_color-400;
   }
 
   .p-splitbutton.p-button-info.p-button-text>.p-button:not(:disabled):active {
     background: rgba(129, 212, 250, 0.16);
     border-color: transparent;
     color: $primary_color-400;
+    fill: $primary_color-400;
   }
 
   .p-splitbutton.p-button-success.p-button-outlined>.p-button {
     background-color: transparent;
     color: $primary_color-100;
+    fill: $primary_color-100;
     border: 1px solid;
   }
 
   .p-splitbutton.p-button-success.p-button-outlined>.p-button:not(:disabled):hover {
     background: rgba(197, 225, 165, 0.04);
     color: $primary_color-100;
+    fill: $primary_color-100;
   }
 
   .p-splitbutton.p-button-success.p-button-outlined>.p-button:not(:disabled):active {
     background: rgba(197, 225, 165, 0.16);
     color: $primary_color-100;
+    fill: $primary_color-100;
   }
 
   .p-splitbutton.p-button-success.p-button-text>.p-button {
     background-color: transparent;
     color: $primary_color-100;
+    fill: $primary_color-100;
     border-color: transparent;
   }
 
@@ -3295,33 +3354,39 @@ body {
     background: rgba(197, 225, 165, 0.04);
     border-color: transparent;
     color: $primary_color-100;
+    fill: $primary_color-100;
   }
 
   .p-splitbutton.p-button-success.p-button-text>.p-button:not(:disabled):active {
     background: rgba(197, 225, 165, 0.16);
     border-color: transparent;
     color: $primary_color-100;
+    fill: $primary_color-100;
   }
 
   .p-splitbutton.p-button-warning.p-button-outlined>.p-button {
     background-color: transparent;
     color: $primary_color-800;
+    fill: $primary_color-800;
     border: 1px solid;
   }
 
   .p-splitbutton.p-button-warning.p-button-outlined>.p-button:not(:disabled):hover {
     background: rgba(255, 224, 130, 0.04);
     color: $primary_color-800;
+    fill: $primary_color-800;
   }
 
   .p-splitbutton.p-button-warning.p-button-outlined>.p-button:not(:disabled):active {
     background: rgba(255, 224, 130, 0.16);
     color: $primary_color-800;
+    fill: $primary_color-800;
   }
 
   .p-splitbutton.p-button-warning.p-button-text>.p-button {
     background-color: transparent;
     color: $primary_color-800;
+    fill: $primary_color-800;
     border-color: transparent;
   }
 
@@ -3329,6 +3394,7 @@ body {
     background: rgba(255, 224, 130, 0.04);
     border-color: transparent;
     color: $primary_color-800;
+    fill: $primary_color-800;
   }
 
   .p-splitbutton.p-button-warning.p-button-text>.p-button:not(:disabled):active {
@@ -3340,22 +3406,26 @@ body {
   .p-splitbutton.p-button-help.p-button-outlined>.p-button {
     background-color: transparent;
     color: #ce93d8;
+    fill: #ce93d8;
     border: 1px solid;
   }
 
   .p-splitbutton.p-button-help.p-button-outlined>.p-button:not(:disabled):hover {
     background: rgba(206, 147, 216, 0.04);
     color: #ce93d8;
+    fill: #ce93d8;
   }
 
   .p-splitbutton.p-button-help.p-button-outlined>.p-button:not(:disabled):active {
     background: rgba(206, 147, 216, 0.16);
     color: #ce93d8;
+    fill: #ce93d8;
   }
 
   .p-splitbutton.p-button-help.p-button-text>.p-button {
     background-color: transparent;
     color: #ce93d8;
+    fill: #ce93d8;
     border-color: transparent;
   }
 
@@ -3363,33 +3433,39 @@ body {
     background: rgba(206, 147, 216, 0.04);
     border-color: transparent;
     color: #ce93d8;
+    fill: #ce93d8;
   }
 
   .p-splitbutton.p-button-help.p-button-text>.p-button:not(:disabled):active {
     background: rgba(206, 147, 216, 0.16);
     border-color: transparent;
     color: #ce93d8;
+    fill: #ce93d8;
   }
 
   .p-splitbutton.p-button-danger.p-button-outlined>.p-button {
     background-color: transparent;
     color: #f48fb1;
+    fill: #f48fb1;
     border: 1px solid;
   }
 
   .p-splitbutton.p-button-danger.p-button-outlined>.p-button:not(:disabled):hover {
     background: rgba(244, 143, 177, 0.04);
     color: #f48fb1;
+    fill: #f48fb1;
   }
 
   .p-splitbutton.p-button-danger.p-button-outlined>.p-button:not(:disabled):active {
     background: rgba(244, 143, 177, 0.16);
     color: #f48fb1;
+    fill: #f48fb1;
   }
 
   .p-splitbutton.p-button-danger.p-button-text>.p-button {
     background-color: transparent;
     color: #f48fb1;
+    fill: #f48fb1;
     border-color: transparent;
   }
 
@@ -3397,6 +3473,7 @@ body {
     background: rgba(244, 143, 177, 0.04);
     border-color: transparent;
     color: #f48fb1;
+    fill: #f48fb1;
   }
 
   .p-splitbutton.p-button-danger.p-button-text>.p-button:not(:disabled):active {

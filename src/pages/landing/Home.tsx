@@ -2,15 +2,16 @@ import React from 'react';
 import { Button } from 'primereact/button';
 
 const Header = React.lazy(() => import('../../components/landing/Header'));
+const Footer = React.lazy(() => import('../../components/landing/Footer'));
 
 import './Home.scss';
 import logo from '../../../public/logo_calenbry.png';
 
 export default function Home() {
 
-    return (
+    return (<>
+        <Header />
         <div className='home'>
-            <Header />
             <main className="home__main">
                 <h3 className="home-title">CALENBRY FEATURES</h3>
                 <h1 className="home-heading">Your trusted <span>appointment manager</span></h1>
@@ -70,5 +71,7 @@ export default function Home() {
                 </div>
             </section>
         </div>
+        <Footer />
+    </>
     );
 }
