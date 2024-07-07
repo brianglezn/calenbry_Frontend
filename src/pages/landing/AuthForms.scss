@@ -1,0 +1,88 @@
+@import '../../../variables';
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 80vh;
+
+    img {
+        height: 5rem;
+    }
+
+    .auth__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        border-radius: 2rem;
+        background-color: $bg-color-sec;
+        padding: 1rem 2rem;
+        gap: 2rem;
+
+        h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: $primary_color-600;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.8rem;
+            width: 100%;
+
+            svg {
+                fill: $text_color-white;
+            }
+
+            label {
+                opacity: .6;
+            }
+
+            >span,
+            >button {
+                width: 80%;
+
+                input,
+                >div {
+                    width: 100%;
+                }
+            }
+        }
+
+        >div {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: 32px;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        img {
+            height: 4.5rem;
+        }
+
+        .auth__container {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        img {
+            height: 4rem;
+        }
+
+        .auth__container {
+            width: 90%;
+        }
+    }
+}

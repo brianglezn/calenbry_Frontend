@@ -2,10 +2,6 @@ import { Button } from 'primereact/button';
 
 import './Footer.scss';
 import logoTextCalenbry from '../../../public/logo-text_calenbry.png';
-import GitHubIcon from '../icons/GitHubIcon';
-import LinkedinIcon from '../icons/LinkedinIcon';
-import EnvelopIcon from '../icons/EnvelopIcon';
-import SolarPanelIcon from '../icons/SolarPanelIcon';
 
 export default function Footer() {
     return (
@@ -19,21 +15,21 @@ export default function Footer() {
                     <p>Web Developer</p>
                     <div>
                         <Button
-                            icon={<GitHubIcon />}
+                            icon="pi pi-github"
                             outlined
                             onClick={() => window.open('https://github.com/brianglezn', '_blank')}
                         />
                         <Button
-                            icon={<LinkedinIcon />}
+                            icon="pi pi-linkedin"
                             outlined
                             onClick={() => window.open('https://www.linkedin.com/in/brianglezn/', '_blank')}
                         />
                         <Button
-                            icon={<EnvelopIcon />}
+                            icon="pi pi-envelope"
                             outlined onClick={() => window.open('mailto:brianglezn@gmail.com', '_blank')}
                         />
                         <Button
-                            icon={<SolarPanelIcon />}
+                            icon="pi pi-link"
                             outlined
                             onClick={() => window.open('https://brian-novoa.com/', '_blank')}
                         />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'primereact/button';
+import { Link } from 'react-router-dom';
 
 const Header = React.lazy(() => import('../../components/landing/Header'));
 const Footer = React.lazy(() => import('../../components/landing/Footer'));
@@ -19,8 +20,18 @@ export default function Home() {
                     Calenbry is the automation platform to manage your appointment scheduling, solutions and integrations for each department and advanced security features.
                 </p>
                 <div className="home__main-buttons">
-                    <Button label="Log In" text severity="info" />
-                    <Button label="Sign Up" raised />
+                    <Link to="/login">
+                        <Button
+                            label="Log In"
+                            text severity="info"
+                        />
+                    </Link>
+                    <Link to="/register">
+                        <Button
+                            label="Sign Up"
+                            raised
+                        />
+                    </Link>
                 </div>
             </main>
 

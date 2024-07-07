@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Button } from 'primereact/button';
 import { Sidebar } from 'primereact/sidebar';
+import { Link } from 'react-router-dom';
 
 import './Header.scss';
 import logoTextCalenbry from '../../../public/logo-text_calenbry.png';
-import BarsIcon from '../icons/BarsIcon';
 
 export default function Header() {
     const [visible, setVisible] = useState(false);
@@ -17,17 +17,31 @@ export default function Header() {
                 </div>
 
                 <div className="header__menu">
-                    <Button label="Product" link />
-                    <Button label="Solutions" link />
-                    <Button label="Prices" link />
+                    <Link to="#product">
+                        <Button label="Product" link />
+                    </Link>
+                    <Link to="#solutions">
+                        <Button label="Solutions" link />
+                    </Link>
+                    <Link to="#prices">
+                        <Button label="Prices" link />
+                    </Link>
                 </div>
 
                 <div className="header__actions">
                     <div className="header__actions-auth">
-                        <Button label="Log In" text severity="info" />
-                        <Button label="Sign Up" raised />
+                        <Link to="/login">
+                            <Button label="Log In" text severity="info" />
+                        </Link>
+                        <Link to="/register">
+                            <Button label="Sign Up" raised />
+                        </Link>
                     </div>
-                    <Button icon={<BarsIcon />} className="header__menu-button" onClick={() => setVisible(true)} />
+                    <Button
+                        icon="pi pi-bars"
+                        className="header__menu-button"
+                        onClick={() => setVisible(true)}
+                    />
                 </div>
             </nav>
 
@@ -35,16 +49,25 @@ export default function Header() {
                 visible={visible}
                 position="right"
                 onHide={() => setVisible(false)} >
-                <nav
-                    className='header__sidebar-nav'>
+                <nav className='header__sidebar-nav'>
                     <div>
-                        <Button label="Product" link />
-                        <Button label="Solutions" link />
-                        <Button label="Prices" link />
+                        <Link to="#product">
+                            <Button label="Product" link />
+                        </Link>
+                        <Link to="#solutions">
+                            <Button label="Solutions" link />
+                        </Link>
+                        <Link to="#prices">
+                            <Button label="Prices" link />
+                        </Link>
                     </div>
                     <div>
-                        <Button label="Log In" text severity="info" />
-                        <Button label="Sign Up" raised />
+                        <Link to="/login">
+                            <Button label="Log In" text severity="info" />
+                        </Link>
+                        <Link to="/register">
+                            <Button label="Sign Up" raised />
+                        </Link>
                     </div>
                 </nav>
             </Sidebar>

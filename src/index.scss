@@ -1352,12 +1352,11 @@ body {
   .p-inputtext {
     font-size: 1rem;
     color: $text_color-grey;
-    background: $bg-color;
     padding: 0.5rem 0.5rem;
-    border: 1px solid $text_color-grey;
+    border: 1px solid $primary_color-light;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
     appearance: none;
-    border-radius: 7px;
+    border-radius: .5rem;
   }
 
   .p-inputtext:enabled:hover {
