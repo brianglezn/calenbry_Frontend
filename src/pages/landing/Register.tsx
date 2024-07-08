@@ -6,7 +6,6 @@ import { FloatLabel } from "primereact/floatlabel";
 import { Button } from 'primereact/button';
 
 import './AuthForms.scss';
-import logoTextCalenbry from '../../../public/logo-text_calenbry.png';
 import Footer from '../../components/landing/Footer';
 import Header from '../../components/landing/Header';
 
@@ -28,7 +27,6 @@ export default function Register() {
         <>
             <Header />
             <section className="auth">
-                <img src={logoTextCalenbry} alt="Calenbry logo" />
                 <div className="auth__container">
                     <h3>Sing Up</h3>
                     <form action="">

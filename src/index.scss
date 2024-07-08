@@ -2400,13 +2400,13 @@ body {
   }
 
   .p-button.p-button-text:not(:disabled):hover {
-    background: rgba(255, 213, 79, 0.04);
+    background: $primary_color-50;
     color: $primary_color;
     border-color: transparent;
   }
 
   .p-button.p-button-text:not(:disabled):active {
-    background: rgba(255, 213, 79, 0.16);
+    background: $primary_color-50;
     color: $primary_color;
     border-color: transparent;
   }
@@ -2416,12 +2416,12 @@ body {
   }
 
   .p-button.p-button-text.p-button-plain:not(:disabled):hover {
-    background: rgba(255, 255, 255, 0.03);
+    background: $primary_color-50;
     color: $text_color-grey;
   }
 
   .p-button.p-button-text.p-button-plain:not(:disabled):active {
-    background: rgba(255, 255, 255, 0.16);
+    background: $primary_color-50;
     color: $text_color-grey;
   }
 
@@ -7657,6 +7657,7 @@ body {
 
   .p-avatar {
     background-color: $primary_color;
+    color: $primary_color-50;
     border-radius: 15px;
   }
 

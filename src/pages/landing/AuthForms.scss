@@ -8,10 +8,6 @@
     gap: 2rem;
     height: 80vh;
 
-    img {
-        height: 5rem;
-    }
-
     .auth__container {
         display: flex;
         flex-direction: column;
@@ -66,21 +62,12 @@
     }
 
     @media (max-width: 768px) {
-        img {
-            height: 4.5rem;
-        }
-
         .auth__container {
             width: 80%;
         }
     }
 
     @media (max-width: 480px) {
-
-        img {
-            height: 4rem;
-        }
-
         .auth__container {
             width: 90%;
         }
