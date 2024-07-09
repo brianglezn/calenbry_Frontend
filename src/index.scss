@@ -5204,16 +5204,18 @@ body {
 
   .p-tabview .p-tabview-nav {
     background: transparent;
-    border: 1px solid $primary_color-400;
+    border: 1px solid $primary_color-200;
     border-width: 0 0 2px 0;
+    display: flex;
+    padding: 0;
   }
 
   .p-tabview .p-tabview-nav li {
     margin-right: 0;
+    display: flex;
   }
 
   .p-tabview .p-tabview-nav li .p-tabview-nav-link {
-    border: solid $primary_color-400;
     border-width: 0 0 2px 0;
     border-color: transparent transparent $primary_color-400 transparent;
     color: $text_color-grey;
@@ -5237,7 +5239,7 @@ body {
   }
 
   .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
-    border-color: $primary_color;
+    border-bottom: solid $primary_color-400;
     color: $primary_color;
   }
 

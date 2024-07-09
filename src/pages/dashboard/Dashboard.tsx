@@ -30,6 +30,8 @@ export default function Dashboard() {
     const location = useLocation();
     const pageTitle = getPageTitle(location.pathname);
 
+    const isActive = (path: string) => location.pathname === path ? 'active' : '';
+
     return (
         <div className="dashboard">
             <aside className="dashboard__sidebar">
@@ -39,24 +41,24 @@ export default function Dashboard() {
                 <nav className="dashboard__nav">
                     <div>
                         <Link to="/dashboard">
-                            <Button label="Dashboard" icon="pi pi-home" className="p-button-text" />
+                            <Button label="Dashboard" icon="pi pi-home" className={`p-button-text ${isActive('/dashboard')}`} />
                         </Link>
                         <Link to="/dashboard/eventTypes">
-                            <Button label="Event Types" icon="pi pi-calendar" className="p-button-text" />
+                            <Button label="Event Types" icon="pi pi-calendar" className={`p-button-text ${isActive('/dashboard/eventTypes')}`} />
                         </Link>
                         <Link to="/dashboard/events">
-                            <Button label="Events" icon="pi pi-calendar-plus" className="p-button-text" />
+                            <Button label="Events" icon="pi pi-calendar-plus" className={`p-button-text ${isActive('/dashboard/events')}`} />
                         </Link>
                         <Link to="/dashboard/availability">
-                            <Button label="Availability" icon="pi pi-clock" className="p-button-text" />
+                            <Button label="Availability" icon="pi pi-clock" className={`p-button-text ${isActive('/dashboard/availability')}`} />
                         </Link>
                     </div>
                     <div>
                         <Link to="/dashboard/analytics">
-                            <Button label="Analytics" icon="pi pi-chart-bar" className="p-button-text" />
+                            <Button label="Analytics" icon="pi pi-chart-bar" className={`p-button-text ${isActive('/dashboard/analytics')}`} />
                         </Link>
                         <Link to="/dashboard/adminCenter">
-                            <Button label="Admin Center" icon="pi pi-cog" className="p-button-text" />
+                            <Button label="Admin Center" icon="pi pi-cog" className={`p-button-text ${isActive('/dashboard/adminCenter')}`} />
                         </Link>
                     </div>
                 </nav>

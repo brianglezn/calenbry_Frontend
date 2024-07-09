@@ -1,0 +1,33 @@
+@import '../../../variables';
+
+.events {
+    width: 100%;
+
+    .events__actions {
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+
+    .events__tabView {
+        overflow-y: auto;
+
+        .events__list {
+            display: flex;
+            flex-direction: column;
+
+            .events__list-date {
+                font-size: 1.4rem;
+                color: $primary_color-700;
+                font-weight: bold;
+                margin: 1rem 0;
+            }
+
+            .events__list-content {
+                display: flex;
+                flex-direction: column;
+                gap: .3rem;
+            }
+        }
+    }
+}

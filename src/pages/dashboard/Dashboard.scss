@@ -2,7 +2,8 @@
 
 .dashboard {
     display: flex;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     background-color: $bg-color-sec;
 
     .dashboard__sidebar {
@@ -10,7 +11,11 @@
         flex-direction: column;
         align-items: center;
         padding: 1rem 0 1rem 1rem;
-        width: 18rem;
+        width: 17rem;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: 0;
 
         .dashboard__logo {
             display: flex;
@@ -29,6 +34,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            margin-bottom: 1.5rem;
 
             div {
 
@@ -40,6 +46,11 @@
                     width: 100%;
                     text-align: start;
                     font-size: 1.2rem;
+
+                    &.active {
+                        background: $primary_color;
+                        color: $primary_color-100;
+                    }
                 }
             }
         }
@@ -48,12 +59,17 @@
     .dashboard__main {
         padding: 1rem;
         width: 100%;
+        width: calc(100% - 17rem);
+        margin-left: 17rem;
 
         .dashboard__main-container {
+            display: flex;
+            flex-direction: column;
             border-radius: 2rem;
-            height: 100%;
             background-color: $primary_color-100;
             padding: 1.5rem;
+            height: 100%;
+            max-height: 100%;
 
             .dashboard__main--header {
                 display: flex;
